@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: uni;
+  src: url(./f1.ttf);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: sfr;
+  src: url(./sfregular.woff2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+* {
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+}
+
+.header {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  height: 60px;
+  background: #ffffff50;
+  border: 1px solid #ffffffad;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 0 20px;
+  z-index: 3;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #ff250d;
+  font-family: uni;
+  text-align: center;
+  width: 100%;
+}
+
+.container {
+  max-width: 700px;
+  margin: 80px auto 40px; /* отступ сверху для шапки */
+  padding: 0 15px;
+}
+
+.document-card {
+  background: #f3f0f0;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  word-wrap: break-word;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-family: uni;
+  color: #ff250d;
+  margin: 2px 0 8px 0;
+}
+
+.caption {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0 0 10px 0;
+  font-family: sfr;
+}
+
+.expand-btn {
+  background: transparent;
+  border: none;
+  color: #3498db;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0 0 10px 0;
+}
+
+.expand-btn:hover {
+  text-decoration: underline;
+}
+
+.created-at {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.load-more-btn {
+  display: block;
+  margin: 0 auto 40px;
+  background-color: #3498db;
   color: white;
+  font-weight: 600;
+  border: none;
+  padding: 10px 25px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.load-more-btn:hover {
+  background-color: #2980b9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.loader {
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+  margin: 20px 0 40px;
 }
