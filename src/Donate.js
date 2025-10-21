@@ -20,8 +20,6 @@ const Donate = () => {
           frameborder="0"
           allowtransparency="true"
           scrolling="no"></iframe>
-        <h2>Адрес Bitcoin кошелька</h2>
-        <p>13UAcHyf3xaqi4Xj3qE777CGGdFEbtMBxT</p>
       </main>
     </>
   );
