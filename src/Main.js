@@ -17,7 +17,7 @@ const COLLECTION_ID = 'posts'; // замените
 
 const PAGE_SIZE = 10;
 
-const Donate = () => {
+const Main = () => {
   const [documents, setDocuments] = useState([]);
   const [loading, setLoading] = useState(false);
   const [offset, setOffset] = useState(0);
@@ -155,4 +155,4 @@ const Donate = () => {
   );
 };
 
-export default Donate;
+export default Main;

@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 
-const Home = () => {
+const Donate = () => {
   const btc = '13UAcHyf3xaqi4Xj3qE777CGGdFEbtMBxT';
 
   return (
@@ -27,4 +27,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Donate;
