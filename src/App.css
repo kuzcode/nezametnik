@@ -38,7 +38,7 @@ body {
 
 .header h1 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #ff250d;
   font-family: uni;
   text-align: center;
@@ -80,7 +80,7 @@ body {
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: uni;
   color: #ff250d;
   margin: 2px 0 8px 0;
@@ -146,7 +146,7 @@ a {
 }
 
 .donate h2 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: uni;
   margin: 12px 0 12px 0;
   text-transform: uppercase;
